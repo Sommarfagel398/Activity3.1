@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Activity/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <script src="function.js"></script>
-    <div class="navbar">
-        <button onclick="">GET</button>
-        <button onclick="">POST</button>
-        <button onclick="">PUT</button>
-        <button onclick="">PATCH</button> 
-        <button onclick="">DELETE</button>
-    </div>
+        <div class="navbar">
+            <button onclick="getData()">GET</button>
+            <button onclick="postData()">POST</button>
+            <button onclick="putData()">PUT</button>
+            <button onclick="patchData()">PATCH</button>
+            <button onclick="delData()">DELETE</button>
+        </div>
 
-    <div class="Wut">
-        <form>
-            <label for="id">id:</label><br>
-            <input type="text" id="id" name="id"><br>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname">
-            <label for="user">user:</label><br>
-            <input type="text" id="user" name="user">
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email">
-            <label for="address">Address:</label><br>
-            <input type="text" id="address" name="address">
-            <button onclick="">UPDATE</button>
-            
-        </form>
-    </div>
+        <div class="main">
+            <div class="Wut">
+                <form onsubmit="event.preventDefault(); putData();">
+                    <label for="id">id:</label>
+                    <input type="text" id="id" name="id">
 
-    <div class="container">    
-        
-    </div>
-</body>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+
+                    <label for="user">user:</label>
+                    <input type="text" id="user" name="user">
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+
+                    <button type="submit">UPDATE</button>
+                </form>
+            </div>
+
+            <div class="container" id="output">
+            </div>
+        </div>
+
+        <div class="status" id="status">
+        </div>
+
+        <script src="function.js"></script>
+    </body>
 </html>
