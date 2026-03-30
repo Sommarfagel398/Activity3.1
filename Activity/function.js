@@ -1,4 +1,4 @@
-const URL = "https://jsonplaceholder.typicode.com/posts";
+const URL = "https://jsonplaceholder.typicode.com/users";
 
 // GET
 async function getData() {
