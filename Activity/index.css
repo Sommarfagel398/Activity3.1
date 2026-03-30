@@ -1,6 +1,97 @@
-.navbar{
-    background-color: black;
-    color: white;
-    padding: 30px ;
-    padding-top: 10px;
+/* Reset some default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar area */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+    .navbar button {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+        .navbar button:hover {
+            background-color: #777;
+        }
+
+/* Main layout: form left, output right */
+.Wut, .container {
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Form styling */
+.Wut {
+    flex: 1;
+    max-width: 40%;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+    .Wut form label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .Wut form input {
+        width: 100%;
+        padding: 6px;
+        margin-top: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .Wut form button {
+        margin-top: 15px;
+        padding: 8px 12px;
+        background-color: #0078d7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .Wut form button:hover {
+            background-color: #005fa3;
+        }
+
+/* Output styling */
+.container {
+    flex: 1;
+    max-width: 55%;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    white-space: pre-wrap; /* keeps JSON formatting readable */
+    overflow-y: auto;
+    height: 300px;
+}
+
+/* Status code area */
+.status {
+    margin: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
 }
