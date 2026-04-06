@@ -241,3 +241,9 @@ input[type="text"]:focus { border-color: #bbb; }
 .kv-val  { color: var(--text); word-break: break-all; }
 .kv-val.num  { color: var(--post); }
 .kv-val.null { color: var(--muted); font-style: italic; }
+
+
+/* 
+note this css file made by ai because im bad in designing :(
+
+*/
